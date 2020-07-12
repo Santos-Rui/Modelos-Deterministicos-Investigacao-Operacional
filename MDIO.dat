@@ -1,0 +1,14 @@
+/*********************************************
+ * OPL 12.8.0.0 Data
+ * Author: Kenny
+ * Creation Date: 27/11/2018 at 20:42:31
+ *********************************************/
+
+ SheetConnection sheet("excel.xlsx");
+ 
+ n from SheetRead(sheet,"Sheet1!n");
+ c from SheetRead(sheet,"Sheet1!custos");
+ //delta from SheetRead(sheet,"Sheet1!delta");
+ //g from SheetRead(sheet,"Sheet1!g");
+ 
+ x to SheetWrite(sheet,"Sheet1!x");
